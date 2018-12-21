@@ -3,7 +3,7 @@
 <%= @recipe.cook_time %><br>
 
 <br><br>
-<form method='POST' action='/recipes/<%= @recipe.id %>'>
+<form method='POST' action='/recipes/<%= @recipe.id %>/delete'>
   <input id="hidden" type="hidden" name="_method" value="delete">
   <input type="submit" value="delete">
 </form>
